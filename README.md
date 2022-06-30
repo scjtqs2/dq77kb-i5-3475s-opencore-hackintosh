@@ -32,3 +32,6 @@ opencore + macos `big sur` (11.6.5) 的 efi 配置。基本上完美。
 + 关闭串口，将configuration/onboard devices/serial prot修改为disable
 + 禁用 VT-d，将secuity/intel vt directed i/o修改为disable
 + 确保BIOS快速启动与安全启动关闭，显存大于128mb，SATA mode为AHCI，一般dq77kb恢复默认即可
+
+## 说明
+主力机已更新为 昂达 h410d4-ipc + 10500。性能和dq77kb完全不是一个层次。。确实该升级了。
