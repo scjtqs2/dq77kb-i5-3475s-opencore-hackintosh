@@ -57,7 +57,7 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 
 ## 说明
 
-主力机已更新为 昂达 h410d4-ipc + 10500。性能和dq77kb完全不是一个层次。。确实该升级了。
+主力机已更新为 [昂达 h410d4-ipc + 10500](https://github.com/scjtqs2/Hackintosh_ONDA-H410D4-IPC_15-10500_UDH630.git)。性能和dq77kb完全不是一个层次。。确实该升级了。
 
 ## 留图
 ![img.png](img.png)
