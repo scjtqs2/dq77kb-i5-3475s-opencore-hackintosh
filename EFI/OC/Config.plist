@@ -784,7 +784,7 @@
                     <key>Comment</key>
                     <string>V2.6.8 | Fix Monterey Bluetooth</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BlueToolFixup</string>
                     <key>MaxKernel</key>
