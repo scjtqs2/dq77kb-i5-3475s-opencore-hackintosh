@@ -32,6 +32,54 @@
                     <key>Path</key>
                     <string>SSDT-IMEI.aml</string>
                 </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-HPET.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-PLUG.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-PMC.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-PNLF.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-USB-Reset.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-USBX.aml</string>
+                </dict>
             </array>
             <key>Delete</key>
             <array>
@@ -123,30 +171,6 @@
                     <key>Arch</key>
                     <string>x86_64</string>
                     <key>Comment</key>
-                    <string>Reroute HW_BID to OC_BID</string>
-                    <key>Count</key>
-                    <integer>0</integer>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Find</key>
-                    <data>SABXAF8AQgBJAEQA</data>
-                    <key>Identifier</key>
-                    <string>Apple</string>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>Replace</key>
-                    <data>TwBDAF8AQgBJAEQA</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>x86_64</string>
-                    <key>Comment</key>
                     <string>Skip Board ID check</string>
                     <key>Count</key>
                     <integer>0</integer>
@@ -162,6 +186,30 @@
                     <data></data>
                     <key>Replace</key>
                     <data>AC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAu</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>Comment</key>
+                    <string>Reroute HW_BID to OC_BID</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>SABXAF8AQgBJAEQA</data>
+                    <key>Identifier</key>
+                    <string>Apple</string>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>TwBDAF8AQgBJAEQA</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -408,29 +456,11 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.8.6</string>
+                    <string>V1.8.7</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/AppleALC</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>USBPorts.kext</string>
-                    <key>Comment</key>
-                    <string>V1.0</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string></string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -532,6 +562,42 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>UTBMap.kext</string>
+                    <key>Comment</key>
+                    <string>V1.1</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string></string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>USB-Map.kext</string>
+                    <key>Comment</key>
+                    <string>V1.0</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string></string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>IOSkywalkFamily.kext</string>
                     <key>Comment</key>
                     <string>V1.0</string>
@@ -588,7 +654,7 @@
                     <key>BundlePath</key>
                     <string>AMFIPass.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.1</string>
+                    <string>V1.4.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -674,33 +740,15 @@
                 </dict>
                 <dict>
                     <key>Arch</key>
-                    <string>x86_64</string>
-                    <key>BundlePath</key>
-                    <string>AutoPkgInstaller.kext</string>
-                    <key>Comment</key>
-                    <string>V1.0.3 | Chainload OpenCore-Patcher installation</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AutoPkgInstaller</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string>20.0.0</string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>AppleIntelCPUPowerManagementClient.kext</string>
+                    <string>AppleIntelCPUPowerManagement.kext</string>
                     <key>Comment</key>
                     <string>V222.0.0</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AppleIntelCPUPowerManagementClient</string>
+                    <string>Contents/MacOS/AppleIntelCPUPowerManagement</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -712,13 +760,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>AppleIntelCPUPowerManagement.kext</string>
+                    <string>AppleIntelCPUPowerManagementClient.kext</string>
                     <key>Comment</key>
                     <string>V222.0.0</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AppleIntelCPUPowerManagement</string>
+                    <string>Contents/MacOS/AppleIntelCPUPowerManagementClient</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -752,7 +800,7 @@
                     <key>Comment</key>
                     <string>V2.6.1 | Fix Music</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/CSLVFixup</string>
                     <key>MaxKernel</key>
@@ -770,7 +818,7 @@
                     <key>Comment</key>
                     <string>V9.9.9</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string></string>
                     <key>MaxKernel</key>
@@ -816,6 +864,42 @@
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>AutoPkgInstaller.kext</string>
+                    <key>Comment</key>
+                    <string>V1.0.3</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AutoPkgInstaller</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>XHCI-unsupported.kext</string>
+                    <key>Comment</key>
+                    <string>V0.9.2</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string></string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
             </array>
             <key>Block</key>
             <array>
@@ -853,6 +937,36 @@
             <array/>
             <key>Patch</key>
             <array>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>Base</key>
+                    <string>_xcpm_bootstrap</string>
+                    <key>Comment</key>
+                    <string>XCPM for Ivy</string>
+                    <key>Count</key>
+                    <integer>1</integer>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Find</key>
+                    <data>jUPEPEI=</data>
+                    <key>Identifier</key>
+                    <string>kernel</string>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string>22.0.0</string>
+                    <key>Replace</key>
+                    <data>jUPGPEI=</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                </dict>
                 <dict>
                     <key>Arch</key>
                     <string>x86_64</string>
@@ -953,7 +1067,7 @@
                     <key>Count</key>
                     <integer>0</integer>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Find</key>
                     <data></data>
                     <key>Identifier</key>
@@ -983,7 +1097,7 @@
                     <key>Count</key>
                     <integer>1</integer>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Find</key>
                     <data>AHQjSIs=</data>
                     <key>Identifier</key>
@@ -1013,7 +1127,7 @@
                     <key>Count</key>
                     <integer>1</integer>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Find</key>
                     <data>ukgBAAAx9g==</data>
                     <key>Identifier</key>
@@ -1133,7 +1247,7 @@
                     <key>Count</key>
                     <integer>0</integer>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Find</key>
                     <data></data>
                     <key>Identifier</key>
@@ -1163,7 +1277,7 @@
                     <key>Count</key>
                     <integer>0</integer>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Find</key>
                     <data></data>
                     <key>Identifier</key>
@@ -1193,7 +1307,7 @@
                     <key>Count</key>
                     <integer>1</integer>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Find</key>
                     <data>AQAAAOgAAAAAhcB1</data>
                     <key>Identifier</key>
@@ -1223,7 +1337,7 @@
                     <key>Count</key>
                     <integer>1</integer>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Find</key>
                     <data>hNt1S0GLVzg=</data>
                     <key>Identifier</key>
@@ -1253,7 +1367,7 @@
                     <key>Count</key>
                     <integer>1</integer>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Find</key>
                     <data>RYTkdUs=</data>
                     <key>Identifier</key>
@@ -1311,9 +1425,9 @@
                 <key>LegacyCommpage</key>
                 <false/>
                 <key>PanicNoKextDump</key>
-                <true/>
+                <false/>
                 <key>PowerTimeoutKernelPanic</key>
-                <true/>
+                <false/>
                 <key>ProvideCurrentCpuInfo</key>
                 <false/>
                 <key>SetApfsTrimTimeout</key>
@@ -1494,7 +1608,7 @@
                 <key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
                 <dict>
                     <key>OCLP-Settings</key>
-                    <string>-allow_amfi</string>
+                    <string>-allow_fv -allow_amfi</string>
                     <key>revblock</key>
                     <string>media</string>
                     <key>revpatch</key>
@@ -1517,7 +1631,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>keepsyms=1 debug=0x100 ipc_control_port_options=0 -nokcmismatchpanic -v amfi-0x80</string>
+                    <string>keepsyms=1 debug=0x100 ipc_control_port_options=0 -nokcmismatchpanic amfi=0x80 -v</string>
                     <key>csr-active-config</key>
                     <data>AwgAAA==</data>
                     <key>prev-lang:kbd</key>
@@ -1589,11 +1703,11 @@
             <key>Generic</key>
             <dict>
                 <key>AdviseFeatures</key>
-                <false/>
+                <true/>
                 <key>MLB</key>
-                <string>C02335700QXDYWFCB</string>
+                <string>C02246600QXDYWFCB</string>
                 <key>MaxBIOSVersion</key>
-                <false/>
+                <true/>
                 <key>ProcessorType</key>
                 <integer>0</integer>
                 <key>ROM</key>
@@ -1603,11 +1717,11 @@
                 <key>SystemMemoryStatus</key>
                 <string>Auto</string>
                 <key>SystemProductName</key>
-                <string>iMac13,3</string>
+                <string>iMac13,1</string>
                 <key>SystemSerialNumber</key>
-                <string>C02L9YY5DNCT</string>
+                <string>C02JP0AGDNCT</string>
                 <key>SystemUUID</key>
-                <string>4FBB6AD2-3A29-4548-809A-E3762EA4D87B</string>
+                <string>B9DC1F7C-8ECD-4B8A-865A-14301CBF99E1</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>

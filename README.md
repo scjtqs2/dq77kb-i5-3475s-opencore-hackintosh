@@ -42,6 +42,7 @@ opencore + macos `ventura` (13.6.1) 的 efi 配置。基本上完美。
 + 关闭串口，将configuration/onboard devices/serial prot修改为disable
 + 禁用 VT-d，将secuity/intel vt directed i/o修改为disable
 + 确保BIOS快速启动与安全启动关闭，显存大于128mb，SATA mode为AHCI，一般dq77kb恢复默认即可
++ 开启uefi启动，关闭legency启动，关闭安全启动。
 
 ## Win+Mac双系统解决Win系统时间时差问题
 
