@@ -234,6 +234,8 @@
                 <true/>
                 <key>EnableWriteUnprotector</key>
                 <true/>
+                <key>FixupAppleEfiImages</key>
+                <false/>
                 <key>ForceBooterSignature</key>
                 <false/>
                 <key>ForceExitBootServices</key>
@@ -893,6 +895,24 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string></string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>IntelBTPatcher.kext</string>
+                    <key>Comment</key>
+                    <string>V2.3.0</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/IntelBTPatcher</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -1705,13 +1725,13 @@
                 <key>AdviseFeatures</key>
                 <true/>
                 <key>MLB</key>
-                <string>C02246600QXDYWFCB</string>
+                <string>C02346600CDDYWFJA</string>
                 <key>MaxBIOSVersion</key>
                 <true/>
                 <key>ProcessorType</key>
                 <integer>0</integer>
                 <key>ROM</key>
-                <data>X5wCqE+S</data>
+                <data>90qqPpQV</data>
                 <key>SpoofVendor</key>
                 <true/>
                 <key>SystemMemoryStatus</key>
@@ -1719,9 +1739,9 @@
                 <key>SystemProductName</key>
                 <string>iMac13,1</string>
                 <key>SystemSerialNumber</key>
-                <string>C02JP0AGDNCT</string>
+                <string>C02LPQZBDNCT</string>
                 <key>SystemUUID</key>
-                <string>B9DC1F7C-8ECD-4B8A-865A-14301CBF99E1</string>
+                <string>F9D815AC-EFD5-4AA3-B93B-51CFB2BB8E74</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
